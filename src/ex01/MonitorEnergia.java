@@ -17,13 +17,8 @@ public class MonitorEnergia {
     }
 
     public double media(){
-        double media=0;
 
-        for (int i=0;i<indice;i++){
-            media += consumo[i];
-        }
-
-        return media/indice;
+        return media(1,indice);
     }
 
     public double media(int inicio, int fim){
